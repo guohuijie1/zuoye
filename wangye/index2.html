@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<script src='jquery-1.12.4.min.js'></script>
+	<style>
+		#d1{
+			border:1px solid #f00;
+			width:200px;
+			height:200px;
+			border-radius:100px;
+			box-shadow: -20px 10px 5px #0f0;
+		}
+		#d2{
+			background:blue;			/* 背景色 */
+			border:1px solid #f00;
+			width:200px;
+			height:200px;
+			transition:background 2s;
+			transition:width 2s;		/* transition表示要使用渐变动画了，width表示宽度，就是说这个动画用来改变元素的宽度，改变的时间持续2秒钟 */
+		}
+		#d2:hover{
+			width:500px;		/* 当鼠标移动到#d2元素上（hover）时，则宽度由原来的值逐步（持续2s）改变到500px大小 */
+			background:green;
+		}
+		h1{
+			text-shadow: 10px 10px 5px #FF0000;
+		}
+		#d3 ul li:nth-child(3){
+			color:red;
+		}
+	</style>
+</head>
+<body>
+<h1>北国风光，千里冰封，万里雪飘！</h1>
+<div id='d1'>
+hello wrold.
+</div>
+
+<div id='d2'>
+hello wrold.
+</div>
+
+<div id='d3'>
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+		<li>f</li>
+	</ul>
+</div>
+</body>
+</html>
